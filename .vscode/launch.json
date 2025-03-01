@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Name of the debug configuration as it appears in VS Code
+            "name": "Python Debugger: main.py with arguments",
+
+            // Use debugpy for debugging
+            "type": "debugpy",
+
+            // We want to launch (not attach to) a running process
+            "request": "launch",
+
+            // The main script you want to run
+            "program": "/home/david/DMC_app/main.py",
+
+            // Where you want to see output: "integratedTerminal" or "internalConsole"
+            "console": "integratedTerminal",
+
+            // If you want to specify a custom Python interpreter (like your venv):
+            "pythonPath": "/home/david/DMC_app/venv_hailo_rpi5_examples/bin",
+
+            // Here is where you pass arguments to main.py:
+            "args": [
+                "--labels-json", "/home/david/DMC_app/resources/barcode-labels.json",
+                "--hef-path",    "/home/david/DMC_app/resources/yolov11_model_DMC_c.hef",
+                "--input",       "rpi",
+                "--use-frame"
+            ]
+        }
+    ]
+}

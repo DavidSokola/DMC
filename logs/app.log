@@ -1,0 +1,74 @@
+2025-02-24 18:02:23,770 [INFO] [MAIN] Application started.
+2025-02-24 18:02:23,770 [INFO] [DEBUG] Creating ROI queue...
+2025-02-24 18:02:23,771 [INFO] [DEBUG] Decoder thread started.
+2025-02-24 18:02:23,905 [INFO] Initialization successful.
+2025-02-24 18:02:23,906 [INFO] Camera now open.
+2025-02-24 18:02:23,906 [DEBUG] <libcamera._libcamera.CameraManager object at 0x7fff903b1b70>
+2025-02-24 18:02:23,910 [DEBUG] Requesting configuration: {'use_case': 'preview', 'transform': <libcamera.Transform 'identity'>, 'colour_space': <libcamera.ColorSpace 'sYCC'>, 'buffer_count': 4, 'queue': True, 'main': {'format': 'XBGR8888', 'size': (640, 480), 'preserve_ar': True, 'stride': 2560, 'framesize': 1228800}, 'lores': None, 'raw': {'format': 'BGGR_PISP_COMP1', 'size': (1536, 864), 'stride': 1536, 'framesize': 1327104}, 'controls': {'NoiseReductionMode': <NoiseReductionModeEnum.Minimal: 3>, 'FrameDurationLimits': (100, 83333)}, 'sensor': {'bit_depth': 10, 'output_size': (1536, 864)}, 'display': 'main', 'encode': 'main'}
+2025-02-24 18:02:23,910 [INFO] Camera configuration has been adjusted!
+2025-02-24 18:02:23,925 [INFO] Configuration successful!
+2025-02-24 18:02:23,925 [DEBUG] Final configuration: {'use_case': 'preview', 'transform': <libcamera.Transform 'identity'>, 'colour_space': <libcamera.ColorSpace 'sYCC'>, 'buffer_count': 4, 'queue': True, 'main': {'format': 'XBGR8888', 'size': (640, 480), 'preserve_ar': True, 'stride': 2560, 'framesize': 1228800}, 'lores': None, 'raw': {'format': 'BGGR_PISP_COMP1', 'size': (1536, 864), 'stride': 1536, 'framesize': 1327104}, 'controls': {'NoiseReductionMode': <NoiseReductionModeEnum.Minimal: 3>, 'FrameDurationLimits': (100, 83333)}, 'sensor': {'bit_depth': 10, 'output_size': (1536, 864)}, 'display': 'main', 'encode': 'main'}
+2025-02-24 18:02:23,926 [DEBUG] Streams: {'main': <libcamera._libcamera.Stream object at 0x7fff8f878330>, 'lores': None, 'raw': <libcamera._libcamera.Stream object at 0x7fff8f878370>}
+2025-02-24 18:02:23,928 [DEBUG] Allocated 4 buffers for stream 0 with fds [37, 40, 44, 48]
+2025-02-24 18:02:23,930 [DEBUG] Allocated 4 buffers for stream 1 with fds [51, 54, 57, 60]
+2025-02-24 18:02:24,107 [INFO] Camera started
+2025-02-24 18:02:24,347 [INFO] [DEBUG] Running pipeline...
+2025-02-24 18:02:24,348 [DEBUG] Execute job: <picamera2.job.Job object at 0x7fff8fceab10>
+2025-02-24 18:02:24,354 [DEBUG] Execute job: <picamera2.job.Job object at 0x7fffa9591450>
+2025-02-24 18:02:24,365 [DEBUG] Execute job: <picamera2.job.Job object at 0x7fffa6cd7cd0>
+2025-02-24 18:02:24,372 [DEBUG] Execute job: <picamera2.job.Job object at 0x7fff8fa77350>
+2025-02-24 18:02:24,389 [DEBUG] Execute job: <picamera2.job.Job object at 0x7fff8fa776d0>
+2025-02-24 18:02:24,394 [ERROR] [ERROR] Application crashed: module 'hailo' has no attribute 'get_roi_from_frame'
+Traceback (most recent call last):
+  File "/home/david/DMC_app/main.py", line 86, in main
+    app_callback(frame_bgr, user_data)
+  File "/home/david/DMC_app/pipeline_code.py", line 48, in app_callback
+    roi = hailo.get_roi_from_frame(frame_bgr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'hailo' has no attribute 'get_roi_from_frame'
+2025-02-24 18:02:24,401 [INFO] [MAIN] Stopping decode thread...
+2025-02-24 18:02:24,773 [INFO] [MAIN] Decoder thread stopped.
+2025-02-24 18:02:24,777 [DEBUG] Execute job: <picamera2.job.Job object at 0x7fff8fa26e90>
+2025-02-24 18:02:24,789 [INFO] Camera stopped
+2025-02-24 18:02:24,790 [INFO] [MAIN] Camera stopped.
+2025-02-24 18:02:24,790 [INFO] [MAIN] Application exited.
+2025-02-24 18:02:24,990 [DEBUG] Camera was not started
+2025-02-24 18:02:25,192 [INFO] Camera closed successfully.
+2025-02-24 18:02:25,354 [DEBUG] Resources now free: <picamera2.picamera2.Picamera2 object at 0x7fff8fa75350>
+2025-02-24 18:12:16,182 [INFO] [MAIN] Application started.
+2025-02-24 18:12:16,182 [INFO] [DEBUG] Creating ROI queue...
+2025-02-24 18:12:16,182 [INFO] [DEBUG] Decoder thread started.
+2025-02-24 18:12:16,288 [INFO] Initialization successful.
+2025-02-24 18:12:16,289 [INFO] Camera now open.
+2025-02-24 18:12:16,289 [DEBUG] <libcamera._libcamera.CameraManager object at 0x7ffefd7ebab0>
+2025-02-24 18:12:16,291 [DEBUG] Requesting configuration: {'use_case': 'preview', 'transform': <libcamera.Transform 'identity'>, 'colour_space': <libcamera.ColorSpace 'sYCC'>, 'buffer_count': 4, 'queue': True, 'main': {'format': 'XBGR8888', 'size': (640, 480), 'preserve_ar': True, 'stride': 2560, 'framesize': 1228800}, 'lores': None, 'raw': {'format': 'BGGR_PISP_COMP1', 'size': (1536, 864), 'stride': 1536, 'framesize': 1327104}, 'controls': {'NoiseReductionMode': <NoiseReductionModeEnum.Minimal: 3>, 'FrameDurationLimits': (100, 83333)}, 'sensor': {'bit_depth': 10, 'output_size': (1536, 864)}, 'display': 'main', 'encode': 'main'}
+2025-02-24 18:12:16,291 [INFO] Camera configuration has been adjusted!
+2025-02-24 18:12:16,292 [INFO] Configuration successful!
+2025-02-24 18:12:16,292 [DEBUG] Final configuration: {'use_case': 'preview', 'transform': <libcamera.Transform 'identity'>, 'colour_space': <libcamera.ColorSpace 'sYCC'>, 'buffer_count': 4, 'queue': True, 'main': {'format': 'XBGR8888', 'size': (640, 480), 'preserve_ar': True, 'stride': 2560, 'framesize': 1228800}, 'lores': None, 'raw': {'format': 'BGGR_PISP_COMP1', 'size': (1536, 864), 'stride': 1536, 'framesize': 1327104}, 'controls': {'NoiseReductionMode': <NoiseReductionModeEnum.Minimal: 3>, 'FrameDurationLimits': (100, 83333)}, 'sensor': {'bit_depth': 10, 'output_size': (1536, 864)}, 'display': 'main', 'encode': 'main'}
+2025-02-24 18:12:16,292 [DEBUG] Streams: {'main': <libcamera._libcamera.Stream object at 0x7ffefedb3bf0>, 'lores': None, 'raw': <libcamera._libcamera.Stream object at 0x7ffefd5655f0>}
+2025-02-24 18:12:16,294 [DEBUG] Allocated 4 buffers for stream 0 with fds [37, 40, 44, 48]
+2025-02-24 18:12:16,295 [DEBUG] Allocated 4 buffers for stream 1 with fds [51, 54, 57, 60]
+2025-02-24 18:12:16,445 [INFO] Camera started
+2025-02-24 18:12:16,627 [INFO] [DEBUG] Running pipeline...
+2025-02-24 18:12:16,627 [DEBUG] Execute job: <picamera2.job.Job object at 0x7ffefd38db10>
+2025-02-24 18:12:16,630 [DEBUG] Execute job: <picamera2.job.Job object at 0x7ffefd567b10>
+2025-02-24 18:12:16,635 [DEBUG] Execute job: <picamera2.job.Job object at 0x7ffefd532890>
+2025-02-24 18:12:16,638 [DEBUG] Execute job: <picamera2.job.Job object at 0x7ffefd817410>
+2025-02-24 18:12:16,646 [DEBUG] Execute job: <picamera2.job.Job object at 0x7fff1483bfd0>
+2025-02-24 18:12:16,648 [ERROR] [ERROR] Application crashed: module 'hailo' has no attribute 'get_roi_from_frame'
+Traceback (most recent call last):
+  File "/home/david/DMC_app/main.py", line 88, in main
+    app_callback(frame_bgr, user_data)
+  File "/home/david/DMC_app/pipeline_code.py", line 48, in app_callback
+    roi = hailo.get_roi_from_frame(frame_bgr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'hailo' has no attribute 'get_roi_from_frame'
+2025-02-24 18:12:16,649 [INFO] [MAIN] Stopping decode thread...
+2025-02-24 18:12:16,683 [INFO] [MAIN] Decoder thread stopped.
+2025-02-24 18:12:16,683 [DEBUG] Execute job: <picamera2.job.Job object at 0x7fff170a7fd0>
+2025-02-24 18:12:16,686 [INFO] Camera stopped
+2025-02-24 18:12:16,687 [INFO] [MAIN] Camera stopped.
+2025-02-24 18:12:16,688 [INFO] [MAIN] Application exited.
+2025-02-24 18:12:16,888 [DEBUG] Camera was not started
+2025-02-24 18:12:17,088 [INFO] Camera closed successfully.
+2025-02-24 18:12:17,181 [DEBUG] Resources now free: <picamera2.picamera2.Picamera2 object at 0x7ffefd7fa5d0>
